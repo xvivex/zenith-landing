@@ -1,11 +1,12 @@
 import Navbar from "./components/Navbar";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Geist } from "next/font/google";
 
-const inter = Inter({
+// ✅ Load Geist variable font (adjust the path to where the font file is stored)
+const geist = Geist({
   subsets: ["latin"],
   variable: "--font-sans",
-  weight: ["400", "500", "600", "700"], // optional, for headings & body
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -16,8 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
-        {/* Add this div back for the grid background */}
+      <body className={`${geist.variable} font-sans antialiased`}>
         <div className="grid-background"></div>
         <Navbar />
         {children}
