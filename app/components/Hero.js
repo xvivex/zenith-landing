@@ -11,7 +11,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="flex justify-center items-center mb-12"
+          className="flex justify-center items-center my-12"
         >
           <div className="flex -space-x-2 mr-3">
             <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 border-2 border-white flex items-center justify-center">
